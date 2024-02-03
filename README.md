@@ -1,6 +1,6 @@
 To see my website you have to write /Index.html at the last of this portfolio website link or you can go through this link also| https://sourav-rintu.github.io/souravPortfolio/Index.html |
 
-Welcome to my personal portfolio! I'm excited to share with you how I created this space to showcase my education, skills, projects.
+Welcome to my personal portfolio! I'm excited to share with you how I created this space to showcase my education, skills, projects. My portfolio can support any device like phone, laptop, tablet etc.  
 
 Development Process
 1. Design
