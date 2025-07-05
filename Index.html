@@ -73,18 +73,17 @@
                 development. It's this awesome blend of understanding how things work on a hardware level and then
                 making them do cool stuff with code.I'm about tech life and exploring things. <span class="animate scroll" style="--i:4;"></span> </p>
             <div class="btn-box btns">
-               <a class="btn content-download" href="#" onclick="downloadCV()" role="button">Download CV</a>
-
-    <script>
-        function downloadCV() {
-            const link = document.createElement('a');
-            link.href = "/images/SouravBhattCV.pdf";
-            link.download = "SouravBhattCV.pdf";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-    </script>
+               <a class="btn content-download" href="javascript:void(0);" onclick="downloadCV()" role="button">Download CV</a>
+                <script>
+                    function downloadCV() {
+                        const link = document.createElement('a');
+                        link.href = "/images/SouravBhattCV.pdf";
+                        link.download = "SouravBhattCV.pdf";
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    }
+                </script>
                 <span class="animate scroll" style="--i:5;"></span>
             </div>
         </div>
