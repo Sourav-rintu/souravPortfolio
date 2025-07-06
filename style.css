@@ -483,17 +483,14 @@ span {
     background: var(--bg-color);
     z-index: -1;
     transition: .5s;
-
 }
 
 .skills-box .skills-content:hover::before {
     width: 100%;
-
 }
 
 .skills-content .progress {
     padding: 1rem 0;
-
 }
 
 .skills-content .progress h3 {
@@ -512,6 +509,7 @@ span {
     border: .2rem solid var(--main-color);
     padding: .5rem;
     margin: 1rem 0;
+    position: relative;
 }
 
 .skills-content .progress .bar span {
@@ -519,34 +517,11 @@ span {
     height: 100%;
     border-radius: .3rem;
     background: var(--main-color);
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 80%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-    width: 75%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 65%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 45%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 80%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 75%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 65%;
+    width: 100%; /* Full width bar since we're not showing proficiency % */
+    text-align: center;
+    color: white;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .contact {
