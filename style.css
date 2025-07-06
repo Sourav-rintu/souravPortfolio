@@ -504,24 +504,28 @@ span {
 }
 
 .skills-content .progress .bar {
+    position: relative;
     height: 2.5rem;
     border-radius: .6rem;
     border: .2rem solid var(--main-color);
-    padding: .5rem;
     margin: 1rem 0;
-    position: relative;
+    overflow: hidden;
 }
 
 .skills-content .progress .bar span {
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
-    border-radius: .3rem;
+    width: 100%;
     background: var(--main-color);
-    width: 100%; /* Full width bar since we're not showing proficiency % */
-    text-align: center;
     color: white;
-    line-height: 1.5rem;
-    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: .3rem;
 }
 
 .contact {
