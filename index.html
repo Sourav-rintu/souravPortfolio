@@ -57,35 +57,48 @@
     </section>
     <!--about section-->
     <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
-        <div class="about-img">
-            <img src="images/about12.jpeg" alt="">
-            <span class="circle-spin"></span>
-            <span class="animate scroll" style="--i:2;"></span>
-        </div>
-        <div class="about-content">
-            <h3>Engineering Graduate & Aspiring Software Developer<span class="animate scroll" style="--i:3;"></span></h3>
-            <p>
-                Hi, I'm Sourav Bhattacharya, a 20-year-old engineering graduate from Durgapur. I’ve recently completed my Bachelor of Technology in <span>Electronics & Communication Engineering</span>.
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-wrapper">
+        <!-- Card 1: Image + Text -->
+        <div class="about-card left-card">
+            <div class="about-img">
+                <img src="images/about12.jpeg" alt="">
+                <span class="circle-spin"></span>
+            </div>
+            <div class="about-content">
+                <h3>Engineering Graduate & Aspiring Software Developer</h3>
+                <p>
+                Hi, I’m Sourav Bhattacharya, a 20-year-old engineering graduate from Durgapur. 
+                I’ve recently completed my Bachelor of Technology in 
+                <span style="color: var(--main-color); font-weight: bold;">Electronics & Communication Engineering</span>.
                 <br><br>
-                While my academic background is rooted in electronics, I’ve developed a strong passion for software development — where I combine my understanding of hardware systems with a deep interest in coding and building real-world applications. I'm driven by curiosity, problem-solving, and a continuous desire to explore new technologies and bring ideas to life through code.
-                <span class="animate scroll" style="--i:4;"></span>
-            </p>
-            <div class="btn-box btns">
-               <a class="btn content-download" href="javascript:void(0);" onclick="downloadCV()" role="button">Download CV</a>
-                <script>
-                    function downloadCV() {
-                        const link = document.createElement('a');
-                        link.href = "images/SouravBhattacharyaCVjul25.pdf";  // ✅ Path to your CV
-                        link.download = "SouravBhattacharyaCVjul25.pdf";
-                        document.body.appendChild(link);
-                        link.click();
-                        document.body.removeChild(link);
-                    }
-                </script>
-                <span class="animate scroll" style="--i:5;"></span>
+                While my academic background is rooted in electronics, I’ve developed a strong passion for software development — 
+                where I combine my understanding of hardware systems with a deep interest in coding and building real-world applications. 
+                I’m driven by curiosity, problem-solving, and a continuous desire to explore new technologies and bring ideas to life through code.
+                </p>
             </div>
         </div>
+
+        <!-- Card 2: CV Download -->
+            <div class="about-card right-card">
+            <h3 style="font-size: 2.2rem;">Download My CV</h3>
+                <div class="btn-box btns">
+                    <a class="btn" href="javascript:void(0);" onclick="downloadCV()">Download CV</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function downloadCV() {
+            const link = document.createElement('a');
+            link.href = "images/SouravBhattacharyaCVjul25.pdf";  // Replace with your actual CV path
+            link.download = "SouravBhattacharyaCVjul25.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            }
+        </script>
     </section>
     <!--education section-->
     <section class="education" id="education">
