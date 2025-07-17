@@ -42,3 +42,9 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 }
+
+
+function toggleForm() {
+    const form = document.getElementById('contactForm');
+    form.classList.toggle('show');
+}
